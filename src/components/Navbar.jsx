@@ -15,7 +15,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="max-w-[1640px] m-auto flex justify-between items-center p-4">
+    <div className="max-w-[1640px] mx-auto flex justify-between items-center px-8 py-4">
       {/* left side */}
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
@@ -39,7 +39,7 @@ const Navbar = () => {
         <input
           className="bg-transparent p-2 focus:outline-none w-full"
           type="text"
-          placeholder="Search foods"
+          placeholder="Search foods..."
         />
       </div>
       {/* cart button */}
