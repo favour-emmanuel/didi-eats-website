@@ -15,7 +15,7 @@ const Food = () => {
     setFoods(data.filter((item) => item.price === price));
   };
   return (
-    <div className="max-w-[1640] m-auto px-8 py-12">
+    <div className="max-w-[1640] m-auto lg:px-8 px-4 py-12">
       <h1 className="text-orange-600 font-bold text-xl text-center">
         Top Rated Menu Items
       </h1>

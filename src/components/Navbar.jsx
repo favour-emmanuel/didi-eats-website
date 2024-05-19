@@ -15,7 +15,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="max-w-[1640px] mx-auto flex justify-between items-center px-8 py-4">
+    <div className="max-w-[1640px] mx-auto flex justify-between items-center lg:px-8 px-4 py-4">
       {/* left side */}
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
@@ -46,6 +46,7 @@ const Navbar = () => {
       <button className="bg-black text-white rounded-full hidden md:flex  items-center py-2">
         <BsFillCartFill size={20} className="mr-2" /> Cart
       </button>
+
       {/* mobile menu */}
       {nav ? (
         <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
@@ -71,26 +72,26 @@ const Navbar = () => {
           Didi <span className="font-bold">Eats</span>
         </h2>
         <ul className="flex flex-col p-4 text-gray-800">
-          <li className="text-xl py-4 flex ">
-            <TbTruckDelivery size={25} className="mr-4" /> Orders
+          <li className="text-base py-4 flex">
+            <TbTruckDelivery size={20} className="mr-4" /> Orders
           </li>
-          <li className="text-xl py-4 flex ">
-            <MdFavorite size={25} className="mr-4" /> Favourites
+          <li className="text-base py-4 flex ">
+            <MdFavorite size={20} className="mr-4" /> Favourites
           </li>
-          <li className="text-xl py-4 flex ">
-            <FaWallet size={25} className="mr-4" /> Wallet
+          <li className="text-base py-4 flex ">
+            <FaWallet size={20} className="mr-4" /> Wallet
           </li>
-          <li className="text-xl py-4 flex ">
-            <MdHelp size={25} className="mr-4" /> Help
+          <li className="text-base py-4 flex ">
+            <MdHelp size={20} className="mr-4" /> Help
           </li>
-          <li className="text-xl py-4 flex ">
-            <AiFillTag size={25} className="mr-4" /> Promotions
+          <li className="text-base py-4 flex ">
+            <AiFillTag size={20} className="mr-4" /> Promotions
           </li>
-          <li className="text-xl py-4 flex ">
-            <BsFillSaveFill size={25} className="mr-4" /> Best Ones
+          <li className="text-base py-4 flex ">
+            <BsFillSaveFill size={20} className="mr-4" /> Best Ones
           </li>
-          <li className="text-xl py-4 flex ">
-            <FaUserFriends size={25} className="mr-4" /> Invite Friends
+          <li className="text-base py-4 flex ">
+            <FaUserFriends size={20} className="mr-4" /> Invite Friends
           </li>
         </ul>
       </div>
